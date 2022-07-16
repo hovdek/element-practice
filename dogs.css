@@ -1,0 +1,11 @@
+img {
+    height: 500px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    img {
+        height: 300px;
+    }
+}

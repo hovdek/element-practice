@@ -1,0 +1,95 @@
+/* *,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}*/
+
+:root {
+    --primary-color: #4f6d7a;
+    --secondary-color: #c0d6df;
+    --accent-color: #e8dab2;
+
+    --ff-light: 300;
+    --ff-medium: 500;
+    --ff-bold: 700;
+
+    --ff-primary-clr: #1f1f1f;
+    /* --ff-secondary-clr:var(--accent-color);
+    --ff-accent-clr:var(--accent-color); */
+
+    --fs-sm: 0.8rem;
+    --fs-med: 1.25rem;
+    --fs-lg: 2rem;
+
+    --bg-color: #eaeaea;
+
+}
+
+* {
+    font-family: 'De Vietnam Pro', sans-serif;
+}
+
+body {
+    width: 70vh;
+    height: 100vh;
+    margin: auto;
+}
+
+.center {
+    position: flex;
+    top: 50%;
+    left: 50%;
+}
+
+button {
+    font-size: var(--fs-lg);
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    box-shadow: 2px 2px 4px grey;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    transition: 0.6s;
+}
+
+button:active {
+    background-color: var(--primary-color);
+    opacity: 0.6;
+    transition: 0.0125s;
+    transform: scale(0.99);
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--ff-primary-clr);
+}
+
+@media screen and (min-width:601) {
+    div {
+        margin-left: 10%;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 90vh;
+        margin-left: 10px;
+    }
+
+    body,
+    button {
+        display: block;
+        margin-top: 10px;
+    }
+}
