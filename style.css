@@ -74,17 +74,17 @@ a:visited {
     color: var(--ff-primary-clr);
 }
 
-@media screen and (min-width:601) {
+/* @media screen and (min-width: 421px) {
     div {
         margin-left: 10%;
         margin-top: 25%;
     }
-}
+} */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 430px) {
     body {
         height: 90vh;
-        margin-left: 10px;
+        margin-left: 15%;
     }
 
     body,
