@@ -29,10 +29,8 @@ body {
     margin: auto;
 }
 
-.center {
-    position: flex;
-    top: 50%;
-    left: 50%;
+header {
+    margin-bottom: 50px;
 }
 
 a,
@@ -40,6 +38,84 @@ a:visited {
     text-decoration: none;
     color: var(--ff-primary-clr);
 }
+
+img {
+    height: 350px;
+    width: 275px;
+}
+
+h4,
+p {
+    padding-left: 3px;
+}
+
+p{
+    display: inline;
+}
+
+div {
+    padding-bottom: 5px;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 40px;
+    width: 90px;
+    border: none;
+    font-size: var(--fs-med);
+    display: block;
+    border-radius: 5px;
+}
+
+.content:before {
+    content: "✔️";
+    display: inline;
+}
+
+.card-1 {
+    grid-area: card1;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card-2 {
+    grid-area: card2;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+.card-3 {
+    grid-area: card3;
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+    box-shadow: 0 8px 16px 0 gray;
+    transform: scale(1.05);
+}
+
+.center {
+    position: flex;
+    top: 50%;
+    left: 50%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "card1 card2 card3";
+    gap: 10px;
+}
+
 
 /* @media screen and (min-width: 421px) {
     div {
@@ -50,13 +126,24 @@ a:visited {
 
 @media screen and (max-width: 430px) {
     body {
-        height: 90vh;
+        width: 70vw;
         margin-left: 15%;
+        overflow: wrap;
+        align-items: center;
+        
     }
 
     body,
     button {
         display: block;
         margin-top: 10px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "card1"
+                             "card2"
+                             "card3"
     }
 }
