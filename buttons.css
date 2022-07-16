@@ -1,15 +1,8 @@
-/* *,
-*:before,
-*:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; 
-}*/
-
 :root {
     --primary-color: #4f6d7a;
     --secondary-color: #c0d6df;
     --accent-color: #e8dab2;
+    --accent2-clr: #dd6e42;
 
     --ff-light: 300;
     --ff-medium: 500;
@@ -37,36 +30,8 @@ body {
     margin: auto;
 }
 
-.center {
-    position: flex;
-    top: 50%;
-    left: 50%;
-}
-
-button {
-    font-size: var(--fs-lg);
-    width: 40%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    margin-top: 10px;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    box-shadow: 2px 2px 4px grey;
-}
-
-button:hover {
-    background-color: var(--primary-color);
-    opacity: 0.9;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-button:active {
-    background-color: var(--primary-color);
-    opacity: 0.6;
-    transition: 0.0125s;
-    transform: scale(0.99);
+section {
+    margin-top: 25px;
 }
 
 a,
@@ -75,12 +40,55 @@ a:visited {
     color: var(--ff-primary-clr);
 }
 
-/* @media screen and (min-width: 421px) {
-    div {
-        margin-left: 10%;
-        margin-top: 25%;
-    }
-} */
+button:hover {
+    cursor: pointer;
+}
+
+/* classes */
+
+.center {
+    position: flex;
+    top: 50%;
+    left: 50%;
+}
+
+/* login button */
+
+.login-btn {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: var(--fs-med);
+    background-color: var(--accent2-clr);
+    box-shadow: 0 0 10px gray;
+    font-weight: var(--ff-light);
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+    transition: 0.5ms;
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+}
+
+/* add to cart button */
+
+.add-to-cart-btn {
+    width: 95px; 
+    height: 32px;
+    font-size: 0.9rem;
+    color: #301504;
+    background-color: #f1d490;
+    border-color: #aa9a65;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+
+/* media queries */
 
 @media screen and (max-width: 430px) {
     body {
