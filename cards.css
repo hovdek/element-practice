@@ -2,6 +2,7 @@
     --primary-color: #4f6d7a;
     --secondary-color: #c0d6df;
     --accent-color: #e8dab2;
+    --accent2-color: #dd6e42;
 
     --ff-light: 300;
     --ff-medium: 500;
@@ -24,7 +25,7 @@
 }
 
 body {
-    width: 70vh;
+    width: 50vw;
     height: 100vh;
     margin: auto;
 }
@@ -66,6 +67,26 @@ button {
     font-size: var(--fs-med);
     display: block;
     border-radius: 5px;
+    box-shadow: 0 2px 2px gray;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: #eaeaea
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent {
+    background-color: var(--accent2-color);
+    color: #eaeaea;
 }
 
 .content:before {
